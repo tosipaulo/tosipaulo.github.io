@@ -43,12 +43,29 @@ embed {
    max-width: 100%;
 }
 
+.container {
+    position: relative;
+    max-width: 1128px;
+    margin: 0 auto;
+    outline: 1px solid blue;
+}
 
 /*********** Profile ***********/
 
-.profile {
-    width: 100%;
+.profilee {
+    position: fixed; 
+    max-width: 30.141844%; /*340px   30.141844%;*/ /*1128px*/
     text-align: center;
+    outline: 1px solid red;
+}
+
+.profile {
+    position: fixed;
+    max-width: 340px;
+    min-height: 100%;
+    width: 30.141843972%; /*340px*/ /*1128px*/
+    text-align: center;
+    outline: 1px solid red;
 }
 
 .avatar {
