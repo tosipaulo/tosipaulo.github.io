@@ -10,10 +10,12 @@ body, html{
 
 body {
     font-size: 62.5%;
-    line-height: 1.0;
+    text-align: center;
 }
-header, section, footer {
+header, section, footer, article {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6, p, a, span, li, sub, sup, small, table, label, input, select, textarea, button, .panel, .notification {
     font-family: "Open Sans",sans-serif;
@@ -43,12 +45,21 @@ embed {
    max-width: 100%;
 }
 
+.font-title {
+  font-size: 3.9em; /*39px*/
+}
+
+.font-subTitle {
+  font-size: 1.8em; /*18px*/
+}
 
 /*********** Profile ***********/
 
 .profile {
     width: 100%;
     text-align: center;
+    background-color: #2D3E50;
+    color: #fff;
 }
 
 .avatar {
@@ -56,22 +67,10 @@ embed {
     height: 250px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 20px auto;
 }
 
-.avatar > img {
-    height: 100%;
-    width: auto;
-}
-
-.name {
-    font-size: 3.5em; /*35px*/
-}
-
-.age, .city, .contact, .network {
-    font-size: 1.7em; /*17px*/
-}
-
-.contact > a {
+.font-subTitle > a {
     color:#5688B7;
 }
 
@@ -90,5 +89,98 @@ embed {
   padding:20px;
   margin: 0;
   color:#5688B7;
+}
+
+
+/*********** Objective ***********/
+
+.objective {
+  background-color: #45596d;
+  color: #fff;
+}
+
+/*********** Skill ***********/
+
+.skill {
+  width: 100%;
+  
+}
+
+.progress-pie-chart {
+  margin: 0 auto 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+
+.progress-pie-chart.gt-50 {
+  background-color: #2D3E50;
+}
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+  
+}
+
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #2D3E50;
+  transform: rotate(60deg);
+}
+
+.gt-50 .ppc-progress {
+  clip: rect(0, 100px, 200px, 0);
+}
+
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+
+.ppc-percents span {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #2D3E50;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*********** Know  - Who-am***********/
+.know, .who-am {
+  background-color: #E5E5E5;
 }
 
