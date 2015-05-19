@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	var yPos = $(window);
-	console.log(yPos);
 
 	var $ppc = $('.progress-pie-chart'),
     percent = parseInt($ppc.data('percent')),
@@ -10,5 +8,5 @@ $(document).ready(function() {
   }
   $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
 
-	
+
 });

@@ -91,6 +91,10 @@ embed {
   color:#5688B7;
 }
 
+.sidebar-obj {
+  display: none;
+}
+
 
 /*********** Objective ***********/
 
@@ -184,7 +188,9 @@ embed {
   background-color: #E5E5E5;
 }
 
-
+.who-am > .font-subTitle {
+  padding: 10px;
+}
 
 
 @media (min-width: 445px) and (orientation:landscape) {
@@ -198,4 +204,41 @@ embed {
     margin: 0 auto 10px 35px;
     float: left;
   }
+}
+
+@media (min-width:800px) {
+
+  html, body { height: 100%;}
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .profile {
+    position: fixed;
+    max-width: 25%;    
+    height: 100%;                        /* para falta de suporte */ 
+
+  }
+
+  .sidebar-obj {
+    display: block;
+    background-color: #45596d;
+  }
+
+  .objective {
+    display: none;
+  }
+
+  .section {
+    display: block;
+    float: right;
+    max-width: 75%; 
+  }
+
+   .skill {
+    max-width: 75%;
+  }
+
 }
