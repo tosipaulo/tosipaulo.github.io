@@ -184,3 +184,18 @@ embed {
   background-color: #E5E5E5;
 }
 
+
+
+
+@media (min-width: 445px) and (orientation:landscape) {
+
+  .skill {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .progress-pie-chart {
+    margin: 0 auto 10px 35px;
+    float: left;
+  }
+}
