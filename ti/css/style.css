@@ -6,7 +6,7 @@
 
 body, html{
   width: 100%;
-} 
+}
 
 body {
     font-size: 62.5%;
@@ -51,35 +51,6 @@ embed {
 
 .font-subTitle {
   font-size: 1.8em; /*18px*/
-}
-
-.btn {
-  padding: 15px 20px;
-  border: 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-.btn-principal:disabled {
-  background: #ccc;
-  color: #fff;
-  cursor: not-allowed;
-}
-.btn-principal:hover:disabled {
-  background: #c1c0c0;
-  color: #fff;
-}
-.btn-principal {
-  background: #2D3E50;
-  color: #fff;
-}
-.btn-principal:hover,
-.btn-principal:active {
-  background: #45596D;
-  color: #fff;
 }
 
 /*********** Profile ***********/
@@ -220,49 +191,6 @@ embed {
 .who-am > .font-subTitle {
   padding: 10px;
 }
-
-/*********** Version PDF***********/
-.version-pdf a .btn {
-  margin: 20px auto 20px auto;
-}
-
-.form {
-  margin-top: 50px;
-  padding: 10px;
-  width: 100%;
-}
-
-.form label {
-  color: #333;
-  text-transform: uppercase;
-}
-
-.form input,
-.form textarea {
-  outline: none;
-  width: 100%;
-  padding: 0.625em;
-  margin-bottom: 20px;
-  margin-top: 0.313em;
-  border: 0;
-  border-bottom: 1px solid #999;
-  background: #fff;
-
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-.form textarea {
-  min-height: 6.250em; /*100px*/ 
-}
-
-.form input:focus,
-.form textarea:focus {
-  background: #E5E5E5;
-}
-
 
 
 @media (min-width: 445px) and (orientation:landscape) {
