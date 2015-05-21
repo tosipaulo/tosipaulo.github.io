@@ -34,7 +34,7 @@ $(document).ready(function() {
         e.preventDefault();
         $('.resposta-form').html('<div class="alert" role="alert"><i class="fa fa-spinner fa-spin"></i> Enviando...</div>'); ///
         $.ajax({
-          url: 'http://paulotosi.com.br/AppEmail/validaForm.php',
+          url: 'validaForm.php',
           type: 'POST',
           data: $('.form').serialize(),
           success: function(data){
