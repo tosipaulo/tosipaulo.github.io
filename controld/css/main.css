@@ -223,14 +223,14 @@ embed {
   }
 
   .line-contact ul li:last-child:before {
-    content: url('../img/arroba.png');
+    content: url('../img/icon-arroba-white.png');
     position: relative;
     margin-right: 10px;
     top: 3px;
   }
 
   .line-contact ul li:first-child:before {
-    content: url('../img/call.png');
+    content: url('../img/icon-call-white.png');
     position: relative;
     margin-right: 10px;
     top: 3px;
