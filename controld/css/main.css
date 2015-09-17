@@ -197,6 +197,11 @@ embed {
 
 @media (min-width: 1024px) {
 
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
   .logo {
     float: left;
   }
@@ -308,21 +313,3 @@ embed {
 
 
 }
-
-@media (min-width: 1100px) {
-
-  .container {
-    width: 1100px;
-    margin: 0 auto;
-  }
-
-  .logo {
-    float: left;
-  }
-
-  .line-contact {
-    float: right;
-  }
-
-}
-
