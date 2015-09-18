@@ -2,17 +2,36 @@ $(document).ready(function() {
 	//Menu
   var largura = $(window).width(); // largura do viewport
   var altura  = $(window).height();
-  var nav = $('.barra-menu-red');
+  var nav = $('.menu-banner');
+
 
   $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() > 55) {
+            nav.addClass("f-nav");
+            $('.nav').css('positon', 'relative');
+            $('.title-page').addClass('title-page-fixed');
+        } else {
+            nav.removeClass("f-nav");
+            $('.nav').css('positon', 'absolute');
+            $('.title-page').removeClass('title-page-fixed');
+        }
+
+
+    });
+
+
+
+
+  $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
             $(".scrollTop").fadeIn();
         } else {
             $(".scrollTop").fadeOut();
         }
 
-
     });
+
+
 
     
     $(".scrollTop").click(function() {
