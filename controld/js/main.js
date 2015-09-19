@@ -53,6 +53,12 @@ $(document).ready(function() {
       }
   });
 
+  $('#view-video').click(function (e) {
+    $('#modal-video').modal();
+
+    return false;
+  });
+
 
   $('#content').on('click', function(e){
     e.preventDefault();
