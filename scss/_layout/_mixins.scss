@@ -1,0 +1,30 @@
+@mixin transition($property, $duration, $timing) {
+
+	-webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+
+}
+
+@mixin transform_rotate ($val) {
+
+	-webkit-transform: rotate($val);
+	-moz-transform: rotate($val);
+	-o-transform: rotate($val);
+	transform: rotate($val);
+
+}
+
+@mixin box_shadow () {
+	-webkit-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.33);
+	box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.33);
+}
+
+
+@mixin border_radius ($val) {
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	border-radius: $val;	
+}

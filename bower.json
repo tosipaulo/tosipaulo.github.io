@@ -1,0 +1,22 @@
+{
+  "name": "paulo-tosi",
+  "authors": [
+    "Paulo Tosi <tosi.paulo@gmail.com>"
+  ],
+  "description": "Currículo para vaga de Front-End",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "tosipaulo.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
