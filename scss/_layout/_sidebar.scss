@@ -1,0 +1,29 @@
+.wrapper-content {
+
+	&__sidebar {
+		position: fixed !important;
+		background-color: #5cb85c;
+		color: #fff;
+		height: 100%;
+		overflow: hidden;
+		@include make-xs-column(12);
+		@include make-md-column(3);
+
+		> .photo {
+			margin: 50px auto;
+		    width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border: 5px solid;
+			border-radius: 50%;
+			@include box_shadow();
+
+    		> img {
+				height: 100%;
+				position: relative;
+				left: -15px;
+    		}	
+		}
+
+	}
+}

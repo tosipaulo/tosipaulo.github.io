@@ -1,3 +1,6 @@
+@import '../lib/bootstrap-sass/assets/stylesheets/bootstrap/_mixins';
+@import '../lib/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '_base/_base';
 @import '_layout/_mixins';
 @import '_layout/_header';
 @import '_layout/_sidebar';
