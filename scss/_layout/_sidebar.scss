@@ -1,9 +1,11 @@
 .wrapper-content {
 
+
 	&__sidebar {
 		position: fixed !important;
 		background-color: #5cb85c;
 		color: #fff;
+		text-align: center;
 		height: 100%;
 		overflow: hidden;
 		@include make-xs-column(12);
@@ -23,6 +25,24 @@
 				position: relative;
 				left: -15px;
     		}	
+		}
+
+		> .social {
+			margin-top: 20px;
+			> ul {
+				display: inline-block;
+			    width: 100%;
+			    padding-left: 0px;
+				> li {
+					display:inline;
+					padding: 10px 25px;
+
+					> a {
+						text-decoration: none;
+						color: #fff;
+					}
+				}
+			}
 		}
 
 	}

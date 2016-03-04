@@ -14,10 +14,12 @@
 	<meta property="og:type" content="">
 	<meta property="og:site_name" content="">
 	<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<!-- Font Open Sans -->
+	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
 
 	<!-- Icones Font Awesome -->
 	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"-->
-	<link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 
 	<!-- Bootstrap  -->
     <link rel="stylesheet" href="css/plugin.css">
@@ -35,6 +37,21 @@
 				<div class="photo">
 					<img src="images/paulo-tosi.jpg" alt="Foto Paulo Tosi Desenvolvedor Front-End">
 				</div>
+
+				<h1>Paulo Tosi</h1>
+				<small>Desenvolvedor Front-End</small>
+
+				<div class="social">
+					<ul>
+						<li><a href="https://www.facebook.com/tosi.paulo" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="https://github.com/tosipaulo" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a></li>
+						<li><a href="skype:tosi.paulo" data-toggle="tooltip" data-placement="top" title="Skype"><i class="fa fa-skype"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/paulotosi" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+					</ul>
+				</div>
+
+
+				<hr class="divider">
 				
 			</aside>
 
@@ -48,6 +65,10 @@
 
 	<script src="lib/jquery/dist/jquery.min.js"></script>
 	<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 </body>
 </html>
