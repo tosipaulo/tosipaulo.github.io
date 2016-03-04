@@ -45,5 +45,14 @@
 			}
 		}
 
+		> .scroll {
+			    margin-top: 20px;
+    			font-size: 26px;
+    			text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    			animation: icon 2s ease-out infinite;
+    			@-moz-keyframes icon{0%{font-size:1em}50%{font-size:1.6em}100%{font-size:1em}}
+    			@keyframes icon{0%{font-size:1em}50%{font-size:1.6em}100%{font-size:1em}}
+		}
+
 	}
 }

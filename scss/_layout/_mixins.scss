@@ -28,3 +28,26 @@
 	-moz-border-radius: $val;
 	border-radius: $val;	
 }
+
+@mixin animate($keyframe, $time, $infinite) {
+	-webkit-animation-name: $keyframe; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: $time; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: $keyframe; /* Chrome, Safari, Opera */
+    animation-name: $keyframe;
+    animation-duration: $time;
+    animation-iteration-count: $keyframe;
+}
+
+@mixin keyframes ($name, $propriedade, $valorInc, $valorFinal) {
+	@-webkit-keyframes $name {
+
+		from {$propriedade: $valorInc}
+	    to {$propriedade: $valorFinal}
+	}
+
+	@keyframes $name {
+
+		from {$propriedade: $valorInc}
+	    to {$propriedade: $valorFinal}
+	}
+}
