@@ -1,0 +1,25 @@
+@media screen and (min-width: 769px) {
+	.wrapper-content {
+		&__sidebar {
+			position: fixed !important;
+		}
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.wrapper-content {
+
+		&__main {
+			@include make-md-column-offset(5);
+		}
+	}
+}
+
+@media screen and (min-width: 1121px) {
+	.wrapper-content {
+
+		&__main {
+			@include make-md-column-offset(4);
+		}
+	}
+}

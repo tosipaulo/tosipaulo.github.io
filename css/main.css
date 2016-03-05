@@ -33,7 +33,6 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.14); }
 
 .wrapper-content__sidebar {
-  position: fixed !important;
   background-color: #5cb85c;
   color: #fff;
   text-align: center;
@@ -48,8 +47,16 @@ body {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
   padding-right: 15px; }
 @media (min-width: 992px) {
+  .wrapper-content__sidebar {
+    float: left;
+    width: 33.33333%; } }
+@media (min-width: 1200px) {
   .wrapper-content__sidebar {
     float: left;
     width: 25%; } }
@@ -80,23 +87,68 @@ body {
   text-decoration: none;
   color: #fff; }
 .wrapper-content__sidebar > .scroll {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 26px;
   text-shadow: 1px 1px 2px #969696;
-  animation: icon 2s ease-out infinite; }
-@-moz-keyframes icon {
-  0% {
-    font-size: 1em; }
-  50% {
-    font-size: 1.6em; }
-  100% {
-    font-size: 1em; } }
-@keyframes icon {
-  0% {
-    font-size: 1em; }
-  50% {
-    font-size: 1.6em; }
-  100% {
-    font-size: 1em; } }
+  /* animation: icon 2s ease-out infinite;
+  @-moz-keyframes icon{0%{font-size:1em}50%{font-size:1.6em}100%{font-size:1em}}
+  @keyframes icon{0%{font-size:1em}50%{font-size:1.6em}100%{font-size:1em}} */ }
+.wrapper-content__sidebar > .bio {
+  text-shadow: 1px 1px 2px #969696; }
+
+.wrapper-content__main {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+@media (min-width: 992px) {
+  .wrapper-content__main {
+    float: left;
+    width: 50%; } }
+@media (min-width: 1200px) {
+  .wrapper-content__main {
+    float: left;
+    width: 58.33333%; } }
+.wrapper-content__main > .skin {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+@media (min-width: 992px) {
+  .wrapper-content__main > .skin {
+    float: left;
+    width: 50%; } }
+.wrapper-content__main > .skin > h1 {
+  margin-bottom: 30px; }
+.wrapper-content__main > .skin .list-unstyled > li {
+  padding: 10px 5px; }
+
+@media screen and (min-width: 769px) {
+  .wrapper-content__sidebar {
+    position: fixed !important; } }
+@media screen and (min-width: 991px) and (min-width: 992px) {
+  .wrapper-content__main {
+    margin-left: 41.66667%; } }
+
+@media screen and (min-width: 1121px) and (min-width: 992px) {
+  .wrapper-content__main {
+    margin-left: 33.33333%; } }
 
 /*# sourceMappingURL=main.css.map */
