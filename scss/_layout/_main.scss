@@ -20,5 +20,10 @@
 				}
 			}
 		}
+
+		> .article {
+			@include make-xs-column(12);
+			@include make-md-column(12);
+		}
 	}
 }

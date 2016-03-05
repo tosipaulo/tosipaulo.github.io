@@ -139,6 +139,21 @@ body {
   margin-bottom: 30px; }
 .wrapper-content__main > .skin .list-unstyled > li {
   padding: 10px 5px; }
+.wrapper-content__main > .article {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+@media (min-width: 992px) {
+  .wrapper-content__main > .article {
+    float: left;
+    width: 100%; } }
 
 @media screen and (min-width: 769px) {
   .wrapper-content__sidebar {
