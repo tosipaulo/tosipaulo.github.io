@@ -9,6 +9,10 @@ body {
 	font-family: $fonts !important;
 }
 
+.title-page {
+	margin-bottom: 30px;
+}
+
 .wrapper {
 	
 	@include container-fixed();
