@@ -23,17 +23,35 @@
 			@include make-xs-column(12);
 			@include make-md-column(12);
 
+			a {
+				color: #000;
+			}
+
+
 			> .media {
 				margin-bottom: 30px;
 
 				> .media-left {
 					width: 100px;
 				}
+			}
 
-				a {
-					color: #000;
-				}
+			> a {
+				color: #fff;
 			}
 		}
+
+		> .share {
+			@include make-xs-column(12);
+			@include make-md-column(12);
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			> iframe {
+			    position: relative;
+				top: 6px;
+			}
+		}
+
 	}
 }
