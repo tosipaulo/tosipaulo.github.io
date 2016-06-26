@@ -1,0 +1,128 @@
+.icon {
+    background-image: url(../../images/sprite.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.icon-area {
+        @include sprite-icon(-5px, -5px, 18px, 17px);
+    }
+
+    &.icon-area-hover {
+        @include sprite-icon(-33px, -5px, 18px, 17px);
+    }
+
+    &.icon-breve {
+        @include sprite-icon(-61px, -5px, 26px, 26px);
+    }
+
+    &.icon-breve-hover {
+        @include sprite-icon(-97px, -5px, 26px, 26px);
+    }
+
+    &.icon-codigo {
+        @include sprite-icon(-133px, -5px, 25px, 18px);
+    }
+
+    &.icon-codigo-hover {
+        @include sprite-icon(-5px, -33px, 25px, 18px);
+    }
+
+    &.icon-comercial {
+        @include sprite-icon(-133px, -33px, 25px, 26px);
+    }
+
+    &.icon-comercial-hover {
+        @include sprite-icon(-5px, -69px, 25px, 26px);
+    }
+
+    &.icon-contato {
+        @include sprite-icon(-40px, -69px, 40px, 35px);
+    }
+
+    &.icon-dormitorio {
+        @include sprite-icon(-90px, -69px, 24px, 15px);
+    }
+
+    &.icon-dormitorio-hover {
+        @include sprite-icon(-124px, -69px, 24px, 15px);
+    }
+
+    &.icon-editar {
+        @include sprite-icon(-90px, -94px, 38px, 35px);
+    }
+
+    &.icon-faixa {
+        @include sprite-icon(-168px, -5px, 18px, 19px);
+    }
+
+    &.icon-faixa-hover {
+        @include sprite-icon(-168px, -34px, 18px, 19px);
+    }
+
+    &.icon-flat {
+        @include sprite-icon(-158px, -69px, 26px, 21px);
+    }
+
+    &.icon-flat-hover {
+        @include sprite-icon(-138px, -100px, 26px, 21px);
+    }
+
+    &.icon-futuro {
+        @include sprite-icon(-5px, -131px, 26px, 26px);
+    }
+
+    &.icon-futuro-hover {
+        @include sprite-icon(-41px, -131px, 26px, 26px);
+    }
+
+    &.icon-lancamento {
+        @include sprite-icon(-138px, -131px, 26px, 26px);
+    }
+
+    &.icon-lancamento-hover {
+        @include sprite-icon(-196px, -5px, 26px, 26px);
+    }
+
+    &.icon-logout {
+        @include sprite-icon(-174px, -100px, 36px, 35px);
+    }
+
+    &.icon-obra {
+        @include sprite-icon(-196px, -41px, 26px, 26px);
+    }
+
+    &.icon-obra-hover {
+        @include sprite-icon(-77px, -145px, 26px, 26px);
+    }
+
+    &.icon-pronto {
+        @include sprite-icon(-174px, -145px, 26px, 26px);
+    }
+
+    &.icon-pronto-hover {
+        @include sprite-icon(-5px, -181px, 26px, 26px);
+    }
+
+    &.icon-residencial {
+        @include sprite-icon(-41px, -181px, 25px, 25px);
+    }
+
+    &.icon-residencial-hover {
+        @include sprite-icon(-76px, -181px, 25px, 25px);
+    }
+
+    &.icon-suite {
+        @include sprite-icon(-111px, -181px, 20px, 19px);
+    }
+
+    &.icon-suite-hover {
+        @include sprite-icon(-141px, -181px, 20px, 19px);
+    }
+
+    &.icon-vagas {
+        @include sprite-icon(-40px, -41px, 25px, 18px);
+    }
+
+    &.icon-vagas-hover {
+        @include sprite-icon(-75px, -41px, 25px, 18px);
+    }
+}

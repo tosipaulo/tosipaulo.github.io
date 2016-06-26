@@ -12,6 +12,33 @@
     	}
     }
 
+    &_menu {
+		    margin-top: 40px;
+    	> ul {
+    		@include prefix(display, flex);
+    		@include prefix(justify-content, space-between);
+
+    		> li {
+    			@include prefix(display, flex);
+				> i {
+					margin-right: 5px;
+				}
+    			> a {
+    				@include prefix(display, flex);
+    				@include prefix(flex-direction, column);
+    				color: #fff;
+
+    				span {
+    					text-transform: uppercase;
+    				}
+    			}
+    		}
+    	}
+    	
+    }
+
+
+
 }
 
 @media screen and (min-width: 768px) {}
