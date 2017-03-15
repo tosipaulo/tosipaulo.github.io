@@ -25,14 +25,14 @@
 
 			<div class="box__content">
 				
-				<span class='box__content_number tempo'>00:00</span>
+				<span class='box__content_number'><span class="mm">00</span>:<span class="ss">00</span></span>
 
 			</div>
 
 			<div class="box__button">
 				
-				<button class="btn" id="comecar">Começar</button>
-				<button class="btn" id="parar">Parar</button>
+				<button class="btn" id="start">Start</button>
+				<button class="btn" id="pause">Pause</button>
 
 			</div>
 
@@ -42,8 +42,11 @@
 
 	</div>
 
-	<audio id="buzzer" src="buzzer.mp3" type="audio/mpeg">
+	<audio id="buzzer">
+	  <source src="buzzer.ogg" type="audio/ogg">
+	  <source src="buzzer.mp3" type="audio/mpeg">
+	</audio>
 	
-	<script src="main.js"></script>
+	<script src="main1.js"></script>
 </body>
 </html>
