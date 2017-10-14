@@ -10,28 +10,34 @@ class Cakes extends Component {
     this.state = {
       cakes: [],
       isLoading: false,
+      categories: []
 
     }
   }
   componentDidMount(){
     this.setState({ isLoading: true })
-    let slug = '';
+    
     api.loadCategories()
-    .then((res) => {
-      slug = res.data.filter((item) => item.slug === this.props.match.params.slug)
-    })
+        .then((res) => {
+          this.setState({
+          categories: res.data
+          })
+        })
 
-    api.loadCakeCategories(slug)
+    api.loadHighlights()
       .then((res) => {
         this.setState({
           isLoading: false,
           cakes: res.data
         })
       })
+
   }
+
+
   renderCakes(cake){
     return (
-      <article className="listagem__box" >
+      <article className="listagem__box" key={cake._id}>
         <Link to={`/bolo/${cake._id}`}>
           <div className="listagem__box--grade">
             <figure>
@@ -51,18 +57,25 @@ class Cakes extends Component {
     )
   }
   render() {
+    let slugName = this.state.categories.filter((item) => item.slug === this.props.match.params.slug)
+    
+    if(!slugName.length) return false
+
+    let _cakes = this.state.cakes.filter((cake) => cake.categoria === slugName[0].nome)
+
+    
     return (
       <div>
         <section className="l-conteudo">
             <div className="conteudo">
-              <div className="conteudo__titulo">
-                <h2 id="titulo-bolo">Novidades</h2>
+              <div className="conteudo__titulo interna">
+                <h2 id="titulo-bolo">{(_cakes.length) ? `${_cakes[0].categoria}` : 'Ops...'}</h2>
               </div>
         
-              <div className="conteudo__busca">
+              {/* <div className="conteudo__busca">
                 <input type="text" className="conteudo__busca--input" />
                 <button className="conteudo__busca--botao"><i className="fa fa-search"></i></button>
-              </div>
+              </div> */}
             </div>
         
             <div className="listagem" id="listagem">
@@ -75,7 +88,15 @@ class Cakes extends Component {
               {
                 !this.state.isLoading &&
                 <div>
-                  {this.state.cakes.map((item) => this.renderCakes(item))}
+                  {
+                    (!_cakes.length) ? 
+                    <div>
+                      <p>Ainda não cadastramos bolos para : '{slugName[0].nome}'</p>
+                      <Link to="/">Veja nossas novidades</Link>
+                    </div>
+                    :
+                    _cakes.map((item) => this.renderCakes(item))
+                  }
                 </div>  
               }
               

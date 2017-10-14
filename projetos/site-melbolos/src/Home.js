@@ -19,13 +19,13 @@ class Home extends Component {
       .then((res) => {
         this.setState({
           isLoading: false,
-          cakes: res.data.slice(res.length - 12).reverse()
+          cakes: res.data.slice(res.data.length - 12).reverse()
         })
       })
   }
   renderCakes(cake){
     return (
-      <article className="listagem__box" >
+      <article className="listagem__box" key={cake._id}>
         <Link to={`/bolo/${cake._id}`}>
           <div className="listagem__box--grade">
             <figure>
@@ -49,13 +49,13 @@ class Home extends Component {
       <div>
         <section className="l-conteudo">
             <div className="conteudo">
-              <div className="conteudo__titulo">
+              <div className="conteudo__titulo interna">
                 <h2 id="titulo-bolo">Novidades</h2>
               </div>
         
               <div className="conteudo__busca">
-                <input type="text" className="conteudo__busca--input" />
-                <button className="conteudo__busca--botao"><i className="fa fa-search"></i></button>
+                {/* <input type="text" className="conteudo__busca--input" />
+                <button className="conteudo__busca--botao"><i className="fa fa-search"></i></button> */}
               </div>
             </div>
         
