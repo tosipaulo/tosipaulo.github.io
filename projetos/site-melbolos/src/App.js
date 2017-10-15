@@ -96,7 +96,7 @@ class App extends Component {
                 <li><a href="https://www.instagram.com/melbolosfake/" target="_blank"><i className="fa fa-instagram"></i></a></li>
               </ul>
             </nav>
-          </aside>
+          </aside> 
       
           <Route exact path='/' component={Home} />
           <Route exact path='/bolo/:cake' component={Cake} />
