@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+
 import api  from './Api'
 
 class Cake extends Component {
@@ -8,23 +8,20 @@ class Cake extends Component {
 
     this.state = {
       cake: [],
-      isLoading: false,
-      tags: []
+      isLoading: false
     }
   }
   componentDidMount(){
     this.setState({ isLoading: true })
-    api.loadCakeId(this.props.match.params.cake)
+    api.loadCakeId(this.props.match.params.cake) 
       .then((res) => {
         this.setState({
           isLoading: false,
-          cake: res.data,
-          tags: JSON.parse(res.data.tags)
+          cake: res.data
         })
       })
   }
   render() {
-
     return (
       <section className="l-conteudo">
         
@@ -34,8 +31,8 @@ class Cake extends Component {
           </div>
 
           <div className="conteudo__busca">
-            {/* <input type="text" className="conteudo__busca--input" />
-            <button className="conteudo__busca--botao"><i className="fa fa-search"></i></button> */}
+            <input type="text" className="conteudo__busca--input" />
+            <button className="conteudo__busca--botao"><i className="fa fa-search"></i></button>
           </div>
         </div>
 
@@ -58,9 +55,12 @@ class Cake extends Component {
                   <br />
                   <p><strong>Tamanho: </strong> {this.state.cake.sizecake}</p>
                   <ul className="interna__box--descricao_tags">
-                    {
-                      Object.values(this.state.tags).map((item) => <li key={item.text}><a>{item.text}</a></li>)
-                    }
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">massa</a></li>
+                    <li><a href="#">tags</a></li>
+                    <li><a href="#">pretium</a></li>
+                    <li><a href="#">pellentesque</a></li>
+
                   </ul>
                 </div>
               </div>
