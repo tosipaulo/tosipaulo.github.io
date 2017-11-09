@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://melbolos.herokuapp.com/api/'
+  baseURL: 'https://melbolos.herokuapp.com/api/'
 })
 
 const apis = {
