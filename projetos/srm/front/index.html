@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SRM Asset</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+    
+    <div class="l-content">
+
+        <nav class="l-nav">
+            <div class="l-nav__search">
+                <input type="text" class="l-nav__input" placeholder="Pesquise aqui">
+                <i class="material-icons">search</i>
+            </div>
+            <ul class="l-menu">
+                <li class="l-menu__item active"><i class="material-icons">language</i> Painel de Gestão</li>
+                <li class="l-menu__item"><i class="material-icons">alternate_email</i> Conta Digital</li>
+                <li class="l-menu__item"><i class="material-icons">attach_money</i> Ant. de Recebiveis 
+                    <span class="l-menu__item__arrow">
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="l-body">
+
+            <div class="l-body__head">
+
+                <div class="l-body__logo l-logo">
+                    <a class="l-logo__item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="images/logo-srm.png">
+                            <source media="(max-width: 1024px)" srcset="images/logo-srm-azul.png">
+                            <img src="images/logo-srm-azul.png" alt="">
+                        </picture>
+                    </a>
+                
+                    <div class="l-logo__icon m-icon__hambuguer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="l-body__filter">
+
+                    <div class="l-filter-header">
+                        <label for="groupecon" class="l-filter-header__label">Grupo Econômico:</label>
+
+                        <div class="m-select" id="group-econ">
+                            <span class="m-select__result" id="group-econ-text">Visão Agregada 1</span>
+                            <span class="m-select__icon m-select__icon--arrow"></span>
+                            <ul class="m-select__lists" id="group-econ-res">
+                                <li class="m-select__lists__item">Visão Agregada 2</li>
+                                <li class="m-select__lists__item">Visão Agregada 3</li>
+                                <li class="m-select__lists__item">Visão Agregada 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="l-user">
+                        <div class="m-user">
+                            <i class="material-icons m-user__icon-person white">person</i>
+                            <span class="m-user__name">Sandra Oliveira</span>
+                            <i class="material-icons m-user__icon-arrow">expand_more</i>
+                        </div>
+                        <div class="m-notification">
+                            <i class="material-icons white">notifications_none</i>
+                            <span class="m-notification__number">3</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="l-body__content">
+
+                <ul class="m-breadcrumb">
+                    <li class="m-breadcrumb__item"><a href="" class="m-breadcrumb__link">Pagina Inicial</a></li>
+                    <li class="m-breadcrumb__item"><a href="" class="m-breadcrumb__link">Painel de Gestão</a></li>
+                </ul>
+
+                <div class="l-body__title">
+                    <h2 class="m-title"><i class="material-icons">language</i> Painel de Gestão</h2>
+                    <div class="l-filter-header">
+                        <label for="groupecon" class="l-filter-header__label">Produto:</label>
+
+                        <div class="m-select m-select--large" id="select-prod">
+                            <span class="m-select__result" id="select-prod-text">Todos</span>
+                            <span class="m-select__icon m-select__icon--arrow"></span>
+                            <ul class="m-select__lists" id="select-prod-res">
+                                <li class="m-select__lists__item">Item 01</li>
+                                <li class="m-select__lists__item">Item 02</li>
+                                <li class="m-select__lists__item">Item 03</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-body__main row">
+                    
+                    <div class="l-body__shortcut">
+
+                        <div class="m-box">
+                            
+                            <div class="m-box__head">
+                                <h2 class="m-box__head__title">Atalhos</h2>
+                            </div>
+
+                            <div class="m-box__content">
+
+                                <div class="m-box__buttons m-box__buttons--col7">
+
+                                    <h2 class="m-box__buttons__title">
+                                        Operacional
+                                    </h2>
+
+                                    <div class="m-box__buttons__content">
+                                        <button class="m-btn">Envio</button>
+                                        <button class="m-btn">Assinatura</button>
+                                        <button class="m-btn">Envio de Duplicatas</button>
+                                        <button class="m-btn">Assinatura Digital</button>
+                                        <button class="m-btn">Novas Operações</button>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="m-box__buttons m-box__buttons--col5">
+
+                                        <h2 class="m-box__buttons__title">
+                                            Geral
+                                        </h2>
+    
+                                        <div class="m-box__buttons__content">
+                                            <button class="m-btn">Carteira</button>
+                                            <button class="m-btn">Instruções</button>
+                                        </div>
+    
+    
+                                    </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="l-body__alert">
+
+                            <div class="m-box">
+                            
+                                <div class="m-box__head">
+                                    <h2 class="m-box__head__title blue">Alertas</h2>
+                                    <span>Ultimos 5 dias</span>
+                                </div>
+    
+                                <div class="m-box__content">
+
+                                    <ul class="m-list-alert">
+                                        <li class="m-list-alert__item">
+                                            <span class="m-list-alert__text">23 Notas Canceladas</span>
+                                        </li>
+                                        <li class="m-list-alert__item">
+                                            <span class="m-list-alert__text">13 Notas Canceladas</span>
+                                            <div class="m-select m-select--large">
+                                                <span class="m-select__result">Ações</span>
+                                                <span class="m-select__icon"><i class="material-icons">expand_more</i></span>
+                                            </div>
+                                        </li>
+                                        <li class="m-list-alert__item">
+                                            <span class="m-list-alert__text">7 Assinaturas Digital</span>
+                                            <div class="m-select m-select--large">
+                                                <span class="m-select__result">Ações</span>
+                                                <span class="m-select__icon"><i class="material-icons">expand_more</i></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+    
+                                    
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="l-menu__bg"></div>    
+    <script src="bundle.js" async></script>
+</body>
+</html>
